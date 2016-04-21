@@ -1,7 +1,7 @@
 char2hex - hex2char
 ========
 #####Convert decimal integer string to hexadecimal representation and back in Matlab.#####
-######Version 1.1, 4-13-16######
+######Version 1.2, 4-21-16######
 #####Download Repository: [ZIP Archive](https://github.com/horchler/char2hex/archive/master.zip)#####
 
 --------
@@ -16,7 +16,7 @@ If Matlab's Java JVM is not available, ```char2hex``` and ```hex2char``` fall ba
 --------
 
 Andrew D. Horchler, *adh9 @ case . edu*, [biorobots.case.edu](http://biorobots.case.edu/)  
-Created: 1-23-12, Revision: 1.1, 4-13-16  
+Created: 1-23-12, Revision: 1.2, 4-21-16  
 
 This version tested with Matlab 9.0.0.341360 (R2016a)  
 Mac OS X 10.11.4 (Build: 15E65), Java 1.7.0_75-b13  

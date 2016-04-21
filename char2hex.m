@@ -19,7 +19,7 @@ function h = char2hex(s,n)
 %   See also: HEX2CHAR, DEC2HEX, NUM2HEX, HEX2DEC, HEX2NUM.
 
 %   Andrew D. Horchler, adh9 @ case . edu, Created 1-23-12
-%   Revision: 1.1, 4-13-16
+%   Revision: 1.2, 4-21-16
 
 
 if isempty(s)
@@ -30,16 +30,18 @@ else
         error('char2hex:InvalidString','Input must be a character array.');
     end
     
-    [m,len] = size(s);
-    if m > 1
-        s = cellstr(s);
+    if isvector(s)
+        s = s(:).';
     end
-    s = strtrim(s); % Trims trailing spaces too
+    s = strtrim(cellstr(s));    % Trims trailing spaces too
     
-    if ~all(isstrprop([s{:}],'digit') | isspace([s{:}]))
+    if ~all(isstrprop([s{:}],'digit'))
         error('char2hex:InvalidStringValue',...
               'Input must contain only numeric digits or leading spaces.');
     end
+    
+    m = numel(s);
+    len = max(cellfun('length',s));
 end
 
 if nargin > 1
@@ -54,7 +56,7 @@ else
 end
 
 % Convert
-if len > 15 && isempty(javachk('jvm'))
+if len > 15 && usejava('jvm')
     for i = m:-1:1
     	c{i} = char(java.math.BigInteger(s(i,:)).toString(16));
     end
