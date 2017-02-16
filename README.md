@@ -15,7 +15,7 @@ If Matlab's Java JVM is not available, ```char2hex``` and ```hex2char``` fall ba
 
 --------
 
-Andrew D. Horchler, *adh9 @ case . edu*, [biorobots.case.edu](http://biorobots.case.edu/)  
+Andrew D. Horchler, *horchler @ gmail . com*, [biorobots.case.edu](http://biorobots.case.edu/)  
 Created: 1-23-12, Revision: 1.2, 4-21-16  
 
 This version tested with Matlab 9.0.0.341360 (R2016a)  
@@ -25,7 +25,7 @@ Compatibility maintained back through Matlab 8.5 (R2015a)
 
 --------
 
-Copyright &copy; 2012&ndash;2016, Andrew D. Horchler  
+Copyright &copy; 2012&ndash;2017, Andrew D. Horchler  
 All rights reserved.  
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:

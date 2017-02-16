@@ -18,7 +18,7 @@ function h = char2hex(s,n)
 %   
 %   See also: HEX2CHAR, DEC2HEX, NUM2HEX, HEX2DEC, HEX2NUM.
 
-%   Andrew D. Horchler, adh9 @ case . edu, Created 1-23-12
+%   Andrew D. Horchler, horchler @ gmail . com, Created 1-23-12
 %   Revision: 1.2, 4-21-16
 
 
