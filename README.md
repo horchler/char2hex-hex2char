@@ -1,8 +1,8 @@
 char2hex - hex2char
 ========
-#####Convert decimal integer string to hexadecimal representation and back in Matlab.#####
-######Version 1.2, 4-21-16######
-#####Download Repository: [ZIP Archive](https://github.com/horchler/char2hex/archive/master.zip)#####
+##### Convert decimal integer string to hexadecimal representation and back in Matlab.
+###### Version 1.2, 4-21-16
+##### Download Repository: [ZIP Archive](https://github.com/horchler/char2hex/archive/master.zip)
 
 --------
 
